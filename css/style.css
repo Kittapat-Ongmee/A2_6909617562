@@ -4,3 +4,68 @@
     font-size: 1.25rem;
   }
 }
+
+/* About Me */
+.about-profile {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
+
+.about-details {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.info-item {
+  padding: 0 0 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.info-label {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.info-value {
+  color: #1e293b;
+  font-weight: 500;
+  margin: 0.35rem 0 0;
+}
+
+/* Yorushika Band */
+.band-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.band-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.band-image:hover {
+  transform: scale(1.04);
+}
+
+.band-info {
+  min-width: 0;
+}
+
+@media (max-width: 400px) {
+  .band-image {
+    width: 80px;
+    height: 80px;
+  }
+}
